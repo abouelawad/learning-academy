@@ -18,15 +18,10 @@ class TrainerFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'phone'=> fake()->word(),
+            'phone'=> fake()->phoneNumber(),
             'email'=> fake()->unique()->safeEmail(),
             'specialty' => fake()->word(),
             'image' => fake()->image(null, 640, 480),
         ];
     }
 }
-// $table->string('name');
-//             $table->string('phone');
-//             $table->string('email')->nullable();
-//             $table->string('specialty');
-//             $table->string('image')->nullable();

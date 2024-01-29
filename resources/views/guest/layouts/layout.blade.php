@@ -1,6 +1,6 @@
 
 @include('guest.layouts.header');
 
-@yield('content')
+@yield('guest.content')
 
 @include('guest.layouts.footer')
